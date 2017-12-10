@@ -22,12 +22,12 @@ RUN cd /usr/local/lib/python3.6/site-packages \
 	&& rm -rf ta-lib \
 	&& rm ta-lib-0.4.0-src.tar.gz
 
-WORKDIR app
-COPY app /app
+#WORKDIR app
+#COPY app /app
 
 #EXPOSE 9090 9191
 #USER uwsgi
 EXPOSE 2009
 
 #CMD ["/cmd.sh"]
-CMD ["python", "/app/plotlyes.py"]
+#CMD ["python", "/app/plotlyes.py"]
